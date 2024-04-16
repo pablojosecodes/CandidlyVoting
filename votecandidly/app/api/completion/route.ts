@@ -20,7 +20,8 @@ export async function POST(req: Request) {
 
     INSTRUCTION: Respond to the human's prompt asking about the upcoming district 11 Caliornia senate race  (in which SCott and Yvette are competing) or the candidates. If they ask about ANYTHING else, return "That is out of scope.
 
-    Human: ${prompt}
+
+    \n\nHuman: ${prompt}
     
     Assistant:`,
     model: 'claude-3-opus-20240229',
