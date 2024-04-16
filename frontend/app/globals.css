@@ -1,0 +1,229 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+
+    --accent-color: #4A90E2;
+    /* Your accent color */
+
+    --background: 0 0% 100%;
+    --foreground: 0 0% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 34 4% 37%;
+
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+
+    --accent: 100 10% 20%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 100%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+
+    --radius: 0.5rem;
+  }
+
+  /* .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+ 
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+ 
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+ 
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+ 
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+ 
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+ 
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+ 
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+  } */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.title {
+  @apply text-3xl font-extrabold sm:text-4xl lg:text-5xl
+}
+
+.title2 {
+  @apply text-2xl font-extrabold sm:text-3xl lg:text-4xl
+}
+
+.title3 {
+  @apply text-2xl font-extrabold capitalize
+}
+
+.title4 {
+  @apply text-lg capitalize
+}
+
+
+.undertitle {
+  @apply opacity-80 text-xl lg:text-2xl leading-[1.6] text-[#3f414a]
+}
+
+
+
+.animate-slideIn {
+  animation: slideIn 0.5s forwards;
+}
+
+.animate-slideOut {
+  animation: slideOut 0.5s forwards;
+}
+
+
+
+.delayed-group-hover {
+  transition: opacity 0.3s ease 0.5s;
+  /* Adjust this value for your desired delay */
+}
+
+.group:hover .delayed-group-hover {
+  opacity: 0.8;
+  /* This is the target opacity on hover for the image */
+}
+
+@keyframes slamEffect {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.slam-effect {
+  animation: slamEffect 0.5s ease-out forwards;
+}
+
+
+.disappear {
+
+  display: inline-flex;
+  visibility: visible;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  justify-content: center;
+  border-radius: 0.25rem;
+  background-color: #000000;
+  cursor: pointer;
+
+}
+
+@media (min-width: 768px) {
+  .disappear {
+    width: 0;
+    display: none;
+  }
+}
+
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-enter {
+  animation: slideIn 0.7s forwards;
+}
+
+
+.spotlight {
+  /* Set the size of the element */
+  width: 100vh;
+  height: 100vh;
+  
+  /* Use a radial gradient for the spotlight effect */
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.2) 0%,  
+    rgba(0, 0, 0, 0.2) 70%, 
+    /* rgba(255, 255, 255, 0.2) 50%,  */
+    rgba(255, 255, 255, 0.2) 80%, 
+    /* rgba(255, 255, 255, 0.2) 0%, 
+    rgba(0, 0, 0, 0.7) 70%,
+    rgba(0, 0, 0, 0) 80% */
+  );
+  
+  /* Center the content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  /* Additional styles for the look */
+  color: white;
+  font-size: 2rem;
+  /* Any additional styling you need for the content */
+}

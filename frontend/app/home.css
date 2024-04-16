@@ -1,0 +1,448 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+:root {
+    --black: #111;
+    --grey-text: #808292;
+    --rd-ui-1: #e82929;
+    --red-ui-2: #cf2424;
+}
+
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.hero-homepage-flex {
+    @apply z-10 w-full flex-col justify-between items-center flex relative overflow-hidden mt-0 pb-0;
+    /* padding-top: 90px;  */
+}
+
+.flex-hero-hh {
+    @apply max-w-[900px] gap-x-5 gap-y-3 text-center flex-col items-center flex overflow-visible;
+}
+
+img {
+    @apply border-0 max-w-full align-middle inline-block;
+}
+
+.hero-image {
+    z-index: 5;
+    width: 100%;
+    max-width: 860px;
+    border: 1px solid #e5e5e5;
+    border-bottom-color: rgba(229, 229, 229, 0);
+    border-radius: 20px 20px 0 0;
+    margin-top: 60px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.h1-wrapper-homepage {
+    position: relative;
+}
+
+.subheading {
+    opacity: .8;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.subheading.subheading-hero {
+    color: #3f414a;
+    margin-bottom: 10px;
+}
+
+.flex-buttons-hero {
+    @apply w-full gap-x-2.5 gap-y-2.5 justify-center items-center flex;
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0;
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 38px;
+    line-height: 44px;
+    margin-top: 20px;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+a {
+    background-color: transparent;
+}
+
+a {
+    color: var(--grey-text);
+    text-decoration: none;
+}
+
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.button {
+    background-color: var(--rd-ui-1);
+    color: #fff;
+    text-align: center;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 10px 14px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+/* .button.hero-button {
+    
+    height: 58px;
+    min-width: 260px;
+    background-color: var(--rd-ui-1);
+    padding-left: 28px;
+    padding-right: 28px;
+    font-size: 16px;
+    box-shadow: 0 4px 16px rgba(232, 95, 41, .3), 0 1px 2px rgba(0, 0, 0, .1);
+} */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+.button:hover {
+    background-color: var(--red-ui-2);
+}
+
+.button.hero-button:hover {
+    background-color: var(--red-ui-2);
+}
+
+.modal-wrapper-2 {
+    margin-top: 0;
+}
+
+.modal-2 {
+    z-index: 900;
+    max-height: 100vh;
+    background-color: rgba(0, 0, 0, .4);
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    align-items: flex-start;
+    padding: 120px 20px 20px;
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.button-white-with-shadow-2-alt {
+    min-height: 46px;
+    color: var(--black);
+    background-color: #fff;
+    border: .5px solid #ccc;
+    border-radius: 8px;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 14px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.button-white-with-shadow-2-alt.hero-button-secondary {
+    min-height: 58px;
+    min-width: 260px;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    color: #767779;
+    text-align: center;
+    border-width: 1px;
+    border-radius: 12px;
+    justify-content: center;
+    margin-top: 0;
+    font-weight: 600;
+    transition: all .2s;
+    position: relative;
+}
+
+.button-white-with-shadow-2-alt:hover {
+    color: #278ef5;
+    border-color: #278ef5;
+}
+
+.button-white-with-shadow-2-alt.hero-button-secondary:hover {
+    color: #000;
+    border-width: 1px;
+    border-color: #666;
+}
+
+.modal-mask-3 {
+    z-index: 1300;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.modal-container-2 {
+    z-index: 1400;
+    width: 100%;
+    max-height: 85vh;
+    max-width: 900px;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 50px 40px 40px;
+    display: flex;
+    position: relative;
+    overflow: auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .05);
+}
+
+.modal-container-2.modal-aligned-left-for-video-on-hero {
+    max-width: 800px;
+    color: #111;
+    text-align: left;
+    border-radius: 18px;
+    align-items: flex-start;
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.play-button-wrapper {
+    background-color: #e2e4e3;
+    border-radius: 100px;
+    padding: 8px;
+}
+
+.time-estimate-text-in-button {
+    opacity: .5;
+    margin-top: 1px;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.modal-close-3 {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #f6f7f9;
+    background-image: var(--wpr-bg-2902c588-bf55-4ce2-8d18-33e7347b2572);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    border-radius: 50%;
+    transition: background-color .2s ease-in-out;
+    position: absolute;
+    top: 10px;
+    bottom: auto;
+    left: auto;
+    right: 10px;
+}
+
+.modal-close-3:hover {
+    background-color: #ebedf0;
+}
+
+h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.lazy-yt-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.lazy-yt-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+._60-opacity-text {
+    opacity: .6;
+}
+
+._60-opacity-text.mw-600 {
+    max-width: 600px;
+}
+
+.button.hero-button.on-video-modal {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.html-embed-icon-main {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.html-embed-icon-main.play-button-in-button {
+    width: 18px;
+    height: 18px;
+    color: #333;
+}
+
+.w-embed:after,
+.w-embed:before {
+    content: " ";
+    display: table;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
+}
+
+.w-embed:after {
+    clear: both;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.lazy-youtube {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, .1);
+}
+
+.lazy-youtube {
+    background-color: #000;
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.lazy-youtube .lazy-play-btn {
+    width: 90px;
+    height: 60px;
+    background-color: #333;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+    z-index: 1;
+    opacity: .8;
+    border-radius: 6px;
+}
+
+.lazy-youtube .lazy-play-btn {
+    cursor: pointer;
+}
+
+.lazy-youtube .lazy-play-btn {
+    position: absolute;
+}
+
+.lazy-youtube .lazy-play-btn {
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.lazy-youtube .lazy-play-btn::before {
+    content: "";
+    border-style: solid;
+    border-width: 15px 0 15px 26px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.lazy-youtube .lazy-play-btn,
+.lazy-youtube .lazy-play-btn::before,
+.lazy-youtube iframe,
+.lazy-youtube img {
+    position: absolute;
+}
+
+.lazy-youtube .lazy-play-btn,
+.lazy-youtube .lazy-play-btn::before {
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.lazy-youtube img {
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.lazy-youtube img {
+    cursor: pointer;
+}
+
+.lazy-youtube .lazy-play-btn,
+.lazy-youtube .lazy-play-btn::before,
+.lazy-youtube iframe,
+.lazy-youtube img {
+    position: absolute;
+}
+
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-ZoIL1.style-ZoIL1 {
+    transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    display: none;
+    opacity: 0;
+}
