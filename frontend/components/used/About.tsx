@@ -22,11 +22,11 @@ export default function AboutPage() {
         },
         {
             "Q": "What can I do on the platform?",
-            "A": "You can watch a demo video to understand our features, use the address bar to check if your area is covered, and interact with our chat feature to get summaries on a candidate’s recent remarks or specific issues."
+            "A": "You can get general information on elections (for now just the 2024 California District 11 Senate Election), and interact with our chat feature to synthesize a candidate’s recent remarks or thoughts on specific issues."
         },
         {
             "Q": "What if my area is not covered?",
-            "A": "If you type in an address not covered by our platform, you will receive a message stating, 'Sorry, we are not in your area as of now.' You can then opt to email us to be notified when we expand to your area."
+            "A": "If you are not within California's District 11, you can sign up to be notified when we add support for politicians in your area."
         },
         {
             "Q": "How do you gather information about candidates?",
@@ -34,23 +34,19 @@ export default function AboutPage() {
         },
         {
             "Q": "How accurate is the information provided?",
-            "A": "We strive for accuracy by gathering information directly from verified government sources, analyzing transcripts, and indexing recent talks and videos to ensure up-to-date and reliable content."
+            "A": "Extremely."
         },
         {
             "Q": "Is there a fee to use the platform?",
-            "A": "The platform is free to use. However, we welcome donations to fund and support our project, ensuring the continuation and expansion of our services."
+            "A": "Free to use!"
         },
         {
             "Q": "Can I search for specific remars?",
-            "A": "Yes, you can use the chat to search for specific candidates or topics. For example, you can type 'What has Scott Weiner said about election interference?' or 'Recent remarks on abortion' to get relevant summaries."
+            "A": "Yep, you can use the chat to search for specific candidates or topics. For example, you can type 'What has Scott Weiner said about election interference?' or 'Recent remarks on abortion' to get relevant summaries."
         },
         {
             "Q": "Where does the platform get its information?",
-            "A": "Our information comes from government databases, official candidate websites, verified news sources, and transcripts of recent speeches and interviews. This ensures that the information is accurate and timely."
-        },
-        {
-            "Q": "What are the key features of your candidate profiles?",
-            "A": "Candidate profiles include basic information such as political affiliation, along with transparency details that list sources for all the information provided. This helps users understand the background and current standing of each politician."
+            "A": "Our information comes from government databases, official candidate websites, verified news sources, and transcripts of recent speeches and interviews. We want the information to be trustworthy and timely!"
         },
     ];
     const zipcodes = [94158, 94143, 94133, 94132, 94131, 94130, 94129, 94127, 94124, 94123,
