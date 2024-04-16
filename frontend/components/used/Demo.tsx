@@ -10,7 +10,7 @@ export default function DemoPage() {
                 <div className="flex  content-start justify-start gap-4 pl-0  flex-col  flex-1">
 
                     <div className="flex gap-2 flex-col">
-                         <h2 className="text-3xl md:text-5xl font-regular max-w-xl text-left font-semibold">
+                        <h2 className="text-3xl md:text-5xl font-regular max-w-xl text-left font-semibold">
 
                             {/* <h2 className="text-xl md:text-3xl md:text-5xl tracking-tighter lg:max-w-xl font-regular text-left"> */}
                             Very easy interface
@@ -22,11 +22,11 @@ export default function DemoPage() {
 
                                 <span className="hidden md:block">It's got smart tools to track what they’re saying now compared to before—because who has time for flip-floppers</span>
                             </p>
-                           
+
                         </div>
                         <Button className="max-w-sm w-full border bor border-neutral-800 shadow shadow-lg shadow-neutral-900/40 my-auto md:ml-2 my-2 font-regular rounded bg-sky-500 hover:bg-sky-400 p-2 text-neutral-100 text-sm">
-                                Give it a try
-                            </Button>
+                            Give it a try
+                        </Button>
 
                     </div>
                 </div>
@@ -44,8 +44,8 @@ export default function DemoPage() {
                             }}
                         >
                             <iframe
-                                src="https://demo.arcade.software/94KvuEi7Yv3CxaVKniAA?embed&show_copy_link=true"
-                                title="Soma"
+                                src="https://demo.arcade.software/0kGKVDnKII3UCOzQIGBG?embed&show_copy_link=true"
+                                title="Candily"
                                 frameBorder={0}
                                 loading="lazy"
                                 // w=""
