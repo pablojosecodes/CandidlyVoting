@@ -24,7 +24,7 @@ export async function POST(req: Request) {
     \n\nHuman: ${prompt}
     
     Assistant:`,
-    model: 'claude-3-opus-20240229',
+    model: 'claude-3-haiku-20240307',
     stream: true,
     max_tokens_to_sample: 300,
   });
