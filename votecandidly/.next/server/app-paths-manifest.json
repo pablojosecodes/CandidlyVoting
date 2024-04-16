@@ -1,15 +1,6 @@
 {
-  "/_not-found": "app/_not-found.js",
-  "/api/data/agenda/route": "app/api/data/agenda/route.js",
-  "/api/data/archive/route": "app/api/data/archive/route.js",
-  "/api/data/events/route": "app/api/data/events/route.js",
-  "/api/data/searchevents/route": "app/api/data/searchevents/route.js",
-  "/api/data/go/route": "app/api/data/go/route.js",
-  "/api/data/onboarding/route": "app/api/data/onboarding/route.js",
-  "/api/feedback/route": "app/api/feedback/route.js",
-  "/api/updateUser/route": "app/api/updateUser/route.js",
   "/sign-in/[[...sign-in]]/page": "app/sign-in/[[...sign-in]]/page.js",
-  "/sign-up/[[...sign-up]]/page": "app/sign-up/[[...sign-up]]/page.js",
   "/page": "app/page.js",
-  "/api/completion/route": "app/api/completion/route.js"
+  "/sign-up/[[...sign-up]]/page": "app/sign-up/[[...sign-up]]/page.js",
+  "/api/data/go/route": "app/api/data/go/route.js"
 }
