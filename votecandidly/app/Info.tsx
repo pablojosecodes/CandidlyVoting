@@ -214,10 +214,10 @@ export default function Info({ setIt }: {
 
 
 
-
+{/* 
                 <div className='max-w-sm react-tweet-theme class text-xs'>
                     <Tweet id="1683920951807971329" />
-                </div>
+                </div> */}
             </div>
 
 

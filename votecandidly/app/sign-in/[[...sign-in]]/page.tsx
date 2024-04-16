@@ -21,12 +21,11 @@ export default function Page() {
   return (
     <IndexContext.Provider value={index}>
 
-      <div className="flex flex-col min-h-screen items-center justify-between  w-full">
+      <div className="flex flex-col min-h-screen items-center gap-20  w-full">
         <div className="w-full">
-
           <OnboardingHeader auth />
         </div>
-        <div className="mb-20 mx-auto md:max-w-2xl  md:w-[90%]">
+        <div className=" mx-auto md:max-w-2xl  md:w-[90%]">
           <SignIn signUpUrl="/sign-up" redirectUrl="/" />
         </div>
 

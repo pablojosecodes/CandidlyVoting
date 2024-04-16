@@ -23,7 +23,7 @@ export default async function RootLayout({ children }: any) {
 
   const user: users | null = await getCurrentUser()
   console.log(user)
-  
+
   const settings: ISettings = {
     page: -1,
     index: 0,
@@ -55,10 +55,10 @@ export default async function RootLayout({ children }: any) {
             },
             signUp: {
               variables: {
-                colorPrimary: "#525252",
-                colorText: "white",
-                colorBackground: "#171717",
-                colorAlphaShade: "white"
+                colorPrimary: "#0ea5e9",
+                colorText: "#171717",
+                colorBackground: "#f5f5f5",
+                colorAlphaShade: "#171717"
               },
 
             },

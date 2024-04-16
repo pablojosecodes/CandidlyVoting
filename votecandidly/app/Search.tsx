@@ -216,6 +216,8 @@ export default function Search({ magified }: { magified?: boolean }) {
                             onChange={handleInputChange}
                             className='text-neutral-900 placeholder:text-neutral-800 focus:ring-none focus:border-none border-none ring-none ring-0 border-0' type="text" placeholder="Your question here..." />
                         <Button type='submit' className='border-neutral-600 border hover:bg-neutral-950 border-1 text-neutral-200' onClick={() => {
+
+
                             setFirst(false)
                             setText(input)
                             magicSearch()
