@@ -26,6 +26,7 @@ const convertToHHMM = (dateStrings: string[]): string[] => {
 };
 
 
+
 const HourInput = ({ isMinutes, def }: { isMinutes?: boolean, def?: string }) => {
     const [inputValue, setInputValue] = useState(def ? def : '');
 
@@ -141,6 +142,20 @@ export default function Search({ magified }: { magified?: boolean }) {
         "Who is Scott?"
     ];
 
+    const handleFormSubmit = (event: any) => {
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        if (!isSignedIn) {
+            // If the user is not signed in, log a message or handle accordingly
+            console.log("Please sign in to submit this form.");
+            // Optionally, redirect to the login page or display a login modal
+            return; // Stop the function here if not signed in
+        }
+
+        // If the user is signed in, call the predefined handleSubmit function
+        handleSubmit(event); // Assuming handleSubmit uses the event object
+    };
+
 
     return (
         <div className={`w-full  mb-4 grid gap-y-12 `}>
@@ -166,7 +181,7 @@ export default function Search({ magified }: { magified?: boolean }) {
                 </p>
             </div>}
 
-            {text && !isLoading && <div className="mt-4 flex items-center gap-2 w-full flex-wrap">
+            {text && !isLoading && <div className="mt-4 pb-20  flex items-center gap-2 w-full flex-wrap">
                 {questions.map((question, ind) => {
                     return (
                         <button key={ind} onClick={() => setInput(question)} className="h-auto text-left border bg-sky-300/20 hover:bg-sky-4 ring-1 ring-sky-400 hover:border-sky-8 text-sky-12 py-2 px-4 text-base rounded-lg max-w[128px] disabled:opacity-30">
@@ -202,7 +217,7 @@ export default function Search({ magified }: { magified?: boolean }) {
                 {/* <div className="fixed bottom-10 left-0 w-full" > */}
                 <div
                     className=" pb-8 bg-neutral-200/80 pt-4 px-12 mx-auto max-w-2xl rounded-t-xl w-[90%]   justify-center  items-center space-x-2">
-                    <form className='bg-neutral-50 w-full max-w-xl  flex border p-1  rounded-xl  gap-x-2 border-neutral-400 placeholder:text-neutral-600' onSubmit={handleSubmit}>
+                    <form className='bg-neutral-50 w-full max-w-xl  flex border p-1  rounded-xl  gap-x-2 border-neutral-400 placeholder:text-neutral-600' onSubmit={handleFormSubmit}>
 
                         <Input autoFocus onKeyDown={e => {
                             if (e.key === 'Enter') {
@@ -217,9 +232,11 @@ export default function Search({ magified }: { magified?: boolean }) {
                             className='text-neutral-900 placeholder:text-neutral-800 focus:ring-none focus:border-none border-none ring-none ring-0 border-0' type="text" placeholder="Your question here..." />
                         <Button type='submit' className='border-neutral-600 border hover:bg-neutral-950 border-1 text-neutral-200' onClick={() => {
 
+                            if (isSignedIn) {
+                                setFirst(false)
+                                setText(input)
 
-                            setFirst(false)
-                            setText(input)
+                            }
                             magicSearch()
                         }} >
                             <Icons.magic className='w-5 h-5' />
