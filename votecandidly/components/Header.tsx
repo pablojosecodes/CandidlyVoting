@@ -40,7 +40,7 @@ export default function Header({ magified, magify, auth, index, setIndex, logged
     const { user } = useUser()
 
     return (
-        <div className="pb-20">
+        <div className="pb-4">
             {
                 !auth ?
                     <div className="fixed z-[100] bg-neutral-950/50 backdrop-blur-lg top-0 px-1 flex justify-between w-full">

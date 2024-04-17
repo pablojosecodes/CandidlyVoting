@@ -57,15 +57,13 @@ export default function ContentPage() {
             <div className="flex flex-col     w-full">
 
                 <Header setIndex={setIndex} auth />
-                <div className='  grow flex flex-col justify-between '>
-                    <div className="flex  justify-center    w-full">
+                <div className=' bg-black  flex flex-col  justify-between '>
+                    <div className="flex bg-white  justify-center    w-full">
                         <div className={` max-w-2xl pt-2 w-[90%] grid gap-y-3`}>
                             {index == "Info" && <Info setIt={setIndex} />}
                             {index == "Search" && <Search />}
                         </div>
                     </div>
-
-
 
                 </div>
             </div>

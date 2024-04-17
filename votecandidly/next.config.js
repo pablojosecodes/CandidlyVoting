@@ -34,6 +34,12 @@ const nextConfig = {
         hostname: 'pablosprojects.s3.amazonaws.com',
         port: '',
       },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+      },
+
       
 
       

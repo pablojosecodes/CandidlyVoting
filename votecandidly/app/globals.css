@@ -11,6 +11,13 @@
 .mainfont {
   font-family: main;
 }
+.updated-dark .react-tweet-theme { 
+  --tweet-body-font-size: 1rem; 
+
+  @apply bg-neutral-100 text-neutral-900 hover:bg-neutral-200  my-0 max-h-[400px]
+
+}
+
 
 .custom-radio {
   -webkit-appearance: none;
