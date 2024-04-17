@@ -69,9 +69,9 @@ export function ScrollAreaHorizontalDemo({ data }: { data: context[] }) {
     return (
         <ScrollArea className="w-full  pb-32 px-[-300px] whitespace-nowrap rounded-md border">
             <div className="flex w-max content-start items-start  updated-dark space-x-4 ">
-                <button onClick={() => console.log(data)}>
+                {/* <button onClick={() => console.log(data)}>
                     CLICK
-                </button>
+                </button> */}
                 {data && data.map((val, ind) => {
                     if (val.date == null) {
                         return (
