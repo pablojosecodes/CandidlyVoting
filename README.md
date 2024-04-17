@@ -1,4 +1,4 @@
-# Candidly!
+# Candidly
 
 Note: For now, this only supports the candidates for the California District 11 senate election. Please let me know if there is a set of politicians / an election that you like me to add!
 
