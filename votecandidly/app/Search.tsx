@@ -111,14 +111,12 @@ export default function Search({ magified }: { magified?: boolean }) {
         let timeout: ReturnType<typeof setTimeout>;
 
         if (sources && sourcesRef.current) {
-            // Set a timeout to delay the scroll action
+
             timeout = setTimeout(() => {
                 sourcesRef?.current?.scrollIntoView({ behavior: 'smooth' });
             }, 500); // 5000 milliseconds = 5 seconds
         }
 
-        // Clean up function to clear the timeout if the component unmounts
-        // or if the dependencies change before the timeout is reached
         return () => {
             if (timeout) {
                 clearTimeout(timeout);

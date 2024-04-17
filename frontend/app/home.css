@@ -15,11 +15,6 @@ html {
     --red-ui-2: #cf2424;
 }
 
-/*
-  Based on TailwindCSS recommendations,
-  consider using classes instead of the `@apply` directive
-  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
-*/
 .hero-homepage-flex {
     @apply z-10 w-full flex-col justify-between items-center flex relative overflow-hidden mt-0 pb-0;
     /* padding-top: 90px;  */
@@ -436,13 +431,4 @@ svg:not(:root) {
 .lazy-youtube iframe,
 .lazy-youtube img {
     position: absolute;
-}
-
-
-/* These were inline style tags. Uses id+class to override almost everything */
-#style-ZoIL1.style-ZoIL1 {
-    transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform-style: preserve-3d;
-    display: none;
-    opacity: 0;
 }

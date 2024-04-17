@@ -1,3 +1,6 @@
+*.m4a
+*.json
+
 .next
 */.next
 node_modules

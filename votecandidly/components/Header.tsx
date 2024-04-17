@@ -23,7 +23,7 @@ type IOH = {
 
 
 }
-export default function Header({ magified, magify, auth, index, setIndex, loggedOut, authPopup }: IOH) {
+export default function Header({ magified, magify, auth, index, setIndex, authPopup }: IOH) {
     const { signOut } = useClerk();
 
 
@@ -79,41 +79,35 @@ export default function Header({ magified, magify, auth, index, setIndex, logged
                                     Politicians
                                 </span>
                             </button>
-                            {loggedOut ?
 
-
-                                <button className='relative   transition duration-500 ease-in-out  py-3 md:py-2     flex text-center content-center justify-center col-span-1 - border-r-neutral-600 ' onClick={() => window.open("/sign-in")}>
-                                    sign in
-                                </button>
-                                :
-                                <button className={` ${contextIndex == "Search" ? "text-neutral-800 " : "hover:text-sky-700"}  my-auto relative   flex items-center  md:gap-x-2 transition duration-500 ease-in-out  py-3 md:py-2 transition duration-300 ease-in-out     flex text-center content-center justify-center col-span-1  border-r-neutral-600 `}
-                                    onClick={() => {
-                                        if (setIndex) {
-                                            if (window.location.pathname != "/") {
-                                                window.open("/?in=Search", "_self")
-                                            }
-                                            setIndex("Search")
+                            <button className={` ${contextIndex == "Search" ? "text-neutral-800 " : "hover:text-sky-700"}  my-auto relative   flex items-center  md:gap-x-2 transition duration-500 ease-in-out  py-3 md:py-2 transition duration-300 ease-in-out     flex text-center content-center justify-center col-span-1  border-r-neutral-600 `}
+                                onClick={() => {
+                                    if (setIndex) {
+                                        if (window.location.pathname != "/") {
+                                            window.open("/?in=Search", "_self")
                                         }
-                                        else {
-                                            window.open("/", "_self")
-                                        }
+                                        setIndex("Search")
                                     }
+                                    else {
+                                        window.open("/", "_self")
+                                    }
+                                }
 
-                                    }>
-                                    <Icons.cloud className="w-4 h-4 md:h-6 md:w-6 block " />
-                                    <span className="my-auto hidden md:block">
-                                        Understand
-                                    </span>
-                                </button>
+                                }>
+                                <Icons.cloud className="w-4 h-4 md:h-6 md:w-6 block " />
+                                <span className="my-auto hidden md:block">
+                                    Understand
+                                </span>
+                            </button>
 
-                            }
+
 
 
 
                         </div>
                         <DropdownMenu>
                             <DropdownMenuTrigger className="my-auto border-none border-0 ring-0 ring-none cursor-pointer" asChild>
-                                {user?.imageUrl ? <img onClick={() => window.open("https://withsoma.com", "_blank")} className=" border-0  !border-none ring-none ring-0 overflow-hidden rounded my-auto h-8 w-8"
+                                {user?.imageUrl ? <img onClick={() => window.open("https://votecandidly.com", "_blank")} className=" border-0  !border-none ring-none ring-0 overflow-hidden rounded my-auto h-8 w-8"
                                     src={user?.imageUrl}
                                 /> :
                                     <div className="h-8 w-8 rounded bg-neutral-800  ">
@@ -130,8 +124,6 @@ export default function Header({ magified, magify, auth, index, setIndex, logged
 
                             </DropdownMenuContent>
                         </DropdownMenu>
-
-
 
 
 

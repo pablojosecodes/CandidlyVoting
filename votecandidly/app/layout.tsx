@@ -9,8 +9,7 @@ import { ISettings } from "@/types";
 
 import { Analytics } from "@vercel/analytics/react"
 
-import { Sidebar } from "@/components/ui/sidebar";
-import { Button } from "@/components/ui/button";
+
 import { TooltipProvider } from "@/components/ui/tooltip";
 
 import { users } from "@prisma/client";

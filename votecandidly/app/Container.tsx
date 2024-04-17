@@ -7,20 +7,7 @@ export default function Container({ children }: IC) {
         <div className="w-full    h-screen flex flex-col items-center mx-auto bg-gray-1">
             <div className="h-[calc(100dvh-200px)] pb-8 w-full   overflow-y-auto background-gray-1 relative">
                 <div className=" w-full" />
-                {/* <section className="pt-[20px] flex w-full mb-2 sticky top-[22px] bg-white/30 backdrop-blur-sm items-end">
-                    <div className="ml-auto">
-                        <button
-                            type="button"
-                            id="radix-:R256rja:"
-                            aria-haspopup="menu"
-                            aria-expanded="false"
-                            data-state="closed"
-                            className="rt-reset-button rt-reset-a rt-BaseButton rt-Button rt-r-size-2 rt-variant-soft"
-                        >
-                            Sources 
-                        </button>
-                    </div>
-                </section> */}
+
                 <div className="mt-[24px]">
 
                     <div className=" grid gap-y-4 [overflow-anchor:none]">

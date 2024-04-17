@@ -2,16 +2,13 @@
 import { useState } from 'react';
 
 
-import '@schedule-x/theme-default/dist/index.css'
-
-
 
 
 
 export type rotate = "left" | "right" | null
 
 import Header from '@/components/Header';
-import { useUser } from '@clerk/nextjs';
+
 
 
 import Search from './Search';
@@ -36,16 +33,10 @@ export default function ContentPage() {
 
 
 
-    const [authVisible, setAuthVisible] = useState(false)
-    const authPopup = () => {
-        setAuthVisible(authVisible => !authVisible)
-    }
 
-    const { isSignedIn } = useUser()
+
 
     const viable = ["Info", "Search", "Feedback", "Pricing"]
-
-
 
 
     const [index, setIndex] = useState<IPage>((search && viable.indexOf(search) != -1) ? search : "Info")

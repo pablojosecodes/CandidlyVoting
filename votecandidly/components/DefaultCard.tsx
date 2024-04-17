@@ -38,21 +38,7 @@ export default function DefaultCard({ askDefault }: { askDefault: (val: string) 
                                 )
                             })}
 
-                            {/* <button className="h-auto text-left border bg-sky-300/20 hover:bg-sky-4 ring-1 ring-sky-400 hover:border-sky-8 text-sky-12 py-2 px-4 text-base rounded-lg max-w[128px] disabled:opacity-30">
-                            How do I write a good PRD?
-                        </button>
-                        <button className="h-auto text-left border bg-sky-300/20 hover:bg-sky-4 ring-1 ring-sky-400 hover:border-sky-8 text-sky-12 py-2 px-4 text-base rounded-lg max-w[128px] disabled:opacity-30">
-                            How do I get better at strategy?
-                        </button>
-                        <button className="h-auto text-left border bg-sky-300/20 hover:bg-sky-4 ring-1 ring-sky-400 hover:border-sky-8 text-sky-12 py-2 px-4 text-base rounded-lg max-w[128px] disabled:opacity-30">
-                            How do I improve my conversion?
-                        </button>
-                        <button className="h-auto text-left border bg-sky-300/20 hover:bg-sky-4 ring-1 ring-sky-400 hover:border-sky-8 text-sky-12 py-2 px-4 text-base rounded-lg max-w[128px] disabled:opacity-30">
-                            How do I get better at influence?
-                        </button>
-                        <button className="h-auto text-left border bg-sky-300/20 hover:bg-sky-4 ring-1 ring-sky-400 hover:border-sky-8 text-sky-12 py-2 px-4 text-base rounded-lg max-w[128px] disabled:opacity-30">
-                            How do I run a great 1:1 meeting?
-                        </button> */}
+
                         </div>
                     </div>
                 </div>
