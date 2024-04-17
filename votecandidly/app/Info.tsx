@@ -2,7 +2,9 @@
 import './dots.css'
 import { Tweet } from 'react-tweet'
 
-import { useEvents } from "@/hooks/useEvents"
+
+
+
 import { Icons } from '@/components/ui/icons';
 import { clsx } from 'clsx';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
@@ -18,7 +20,7 @@ export default function Info({ setIt }: {
 
     setIt?: Dispatch<SetStateAction<IPage>>
 }) {
-    const { events, data, fetchMore, isLoading } = useEvents();
+
     const [feedback, setFeedback] = useState("")
 
     const [submitting, setSubmitting] = useState(false)

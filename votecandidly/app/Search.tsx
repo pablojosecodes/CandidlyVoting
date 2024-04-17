@@ -1,5 +1,5 @@
 import './dots.css'
-import { useEvents, useMagicSearch, useSearch } from "@/hooks/useEvents"
+
 import { useEffect, useRef, useState } from 'react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -127,7 +127,7 @@ export default function Search({ magified }: { magified?: boolean }) {
     }, [sources]);
 
 
-    const { events, fetchMore, reset } = useMagicSearch(keywords);
+
     const [prompt, setPrompt] = useState(false)
 
     const [visible, setVisible] = useState(false)
@@ -137,7 +137,6 @@ export default function Search({ magified }: { magified?: boolean }) {
             return
         }
         if (intermediate != keywords) {
-            reset()
             setKeywords(intermediate)
             setVisible(true)
         }
