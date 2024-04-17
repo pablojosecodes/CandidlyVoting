@@ -1,10 +1,8 @@
 export default function DefaultCard({ askDefault }: { askDefault: (val: string) => void }) {
     const questions: string[] = [
-        "Which politicians are you currently tracking?",
-        "What can I do?",
-        "Who is running District 11?",
-        "How do you gather information?",
-        "What is Scott's opinion on psyhedelics?",
+
+        "What are their platforms?",
+        "What is Scott's opinion on psychedelics?",
         "Who is Yvette?"
     ];
 

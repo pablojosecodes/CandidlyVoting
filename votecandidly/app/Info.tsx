@@ -83,7 +83,7 @@ export default function Info({ setIt }: {
 
     return (
         <div className='w-full flex pb-4   gap-x-6 '>
-            <div className='grid gap-y-12   w-full'>
+            <div className='grid gap-y-12 pt-12  w-full'>
                 <p className='w-full text-xl md:text-3xl font-regular bgwhite text-left font-semibold'>
                     CA State Senate elections, District 11
 
@@ -102,17 +102,17 @@ export default function Info({ setIt }: {
                         <h3 className='text-lg font-semibold'>Deadlines</h3>
                         <ul className='list-disc pl-5'>
                             <li><strong>Voter Registration Deadline:</strong> Oct. 21, 2024
-                                <ul className='list-circle pl-4'>
+                                {/* <ul className='list-circle pl-4'>
                                     <li>In-person</li>
                                     <li>By mail: Received by</li>
                                     <li>Online</li>
-                                </ul>
+                                </ul> */}
                             </li>
                             <li><strong>Absentee/Mail-in Ballot Return Deadline:</strong> Nov. 5, 2024
-                                <ul className='list-circle pl-4'>
+                                {/* <ul className='list-circle pl-4'>
                                     <li>In-person</li>
                                     <li>By mail: Postmarked by</li>
-                                </ul>
+                                </ul> */}
                             </li>
                             <li><strong>Election Day Poll Hours:</strong> 7:00 a.m. to 8:00 p.m.</li>
                         </ul>
@@ -161,13 +161,13 @@ export default function Info({ setIt }: {
                                     <p>Law degree from Harvard University</p>
                                 </div>
                             </div>
-                            <Button onClick={() => setIt && setIt("Search")} className='mx-auto w-60 bg-sky-500 hover:bg-sky-600 rounded ring-1 ring-neutral-800 '>
+                            <Button onClick={() => setIt && setIt("Search")} className='mx-auto mb-4 w-60 bg-sky-500 hover:bg-sky-600 rounded ring-1 ring-neutral-800 '>
                                 Learn more
                             </Button>
                         </div>
 
                         <div className="w-full self-end bg-gray-100 p-4 text-center">
-                            <p>Next Election: November 5, 2024</p>
+                            {/* <p>Next Election: November 5, 2024</p> */}
                             <div className="flex justify-center space-x-2">
                                 <a href="https://www.facebook.com/scottdwiener/" className="text-blue-600 hover:text-blue-800">Facebook</a>
                                 <a href="https://twitter.com/Scott_Wiener" className="text-blue-600 hover:text-blue-800">Twitter</a>
@@ -202,7 +202,7 @@ export default function Info({ setIt }: {
                             </Button>
                         </div>
                         <div className="bg-gray-100 p-4 text-center">
-                            <p>Next Election: November 5, 2024</p>
+                            {/* <p>Next Election: November 5, 2024</p> */}
                             <div className="flex justify-center space-x-2">
                                 <a href="https://www.facebook.com/yvetteforsenate" className="text-red-600 hover:text-red-800">Facebook</a>
                                 <a href="https://twitter.com/yvettecorkrean" className="text-red-600 hover:text-red-800">Twitter</a>
@@ -216,7 +216,7 @@ export default function Info({ setIt }: {
 
 
 
-{/* 
+                {/* 
                 <div className='max-w-sm react-tweet-theme class text-xs'>
                     <Tweet id="1683920951807971329" />
                 </div> */}

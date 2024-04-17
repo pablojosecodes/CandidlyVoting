@@ -186,10 +186,10 @@ export default function Search({ magified }: { magified?: boolean }) {
 
     const [text, setText] = useState("")
     const questions: string[] = [
-        "Their thoughts on public policy?",
+        "Thoughts on policy?",
         "Recent social media posts?",
         "Who is Yvette?",
-        "Who is Scott?"
+
     ];
 
     const handleFormSubmit = (event: any) => {
@@ -208,7 +208,7 @@ export default function Search({ magified }: { magified?: boolean }) {
 
 
     return (
-        <div className={` relative overflow-contain w-full bg- mb-4 grid gap-y-8 `}>
+        <div className={` relative overflow-contain w-full bg- mb-12 sm:mb-4 grid gap-y-8 `}>
 
 
 
