@@ -24,7 +24,7 @@ export default function DemoPage() {
                             </p>
 
                         </div>
-                        <Button className="max-w-sm w-full border bor border-neutral-800 shadow shadow-lg shadow-neutral-900/40 my-auto md:ml-2 my-2 font-regular rounded bg-sky-500 hover:bg-sky-400 p-2 text-neutral-100 text-sm">
+                        <Button onClick={() => window.open("https://go.votecandidly.com/")} className="max-w-sm w-full border bor border-neutral-800 shadow shadow-lg shadow-neutral-900/40 my-auto md:ml-2 my-2 font-regular rounded bg-sky-500 hover:bg-sky-400 p-2 text-neutral-100 text-sm">
                             Give it a try
                         </Button>
 
